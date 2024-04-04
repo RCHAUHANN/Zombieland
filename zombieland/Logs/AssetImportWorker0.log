@@ -15,7 +15,7 @@ C:/Users/rashi/Documents/GitHub/Zombieland/zombieland
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54970
+60758
 Successfully changed project path to: C:/Users/rashi/Documents/GitHub/Zombieland/zombieland
 C:/Users/rashi/Documents/GitHub/Zombieland/zombieland
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/rashi/Documents/GitHub/Zombieland/zombieland
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17380] Host "[IP] 10.81.219.246 [Port] 0 [Flags] 2 [Guid] 3422603480 [EditorId] 3422603480 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [21732] Host "[IP] 192.168.10.51 [Port] 0 [Flags] 2 [Guid] 1988205877 [EditorId] 1988205877 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [17380] Host "[IP] 10.81.219.246 [Port] 0 [Flags] 2 [Guid] 3422603480 [EditorId] 3422603480 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21732] Host "[IP] 192.168.10.51 [Port] 0 [Flags] 2 [Guid] 1988205877 [EditorId] 1988205877 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 5340.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56232
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.285888 seconds.
-- Loaded All Assemblies, in 17.030 seconds
+Registered in 0.004673 seconds.
+- Loaded All Assemblies, in  0.323 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.204 seconds
-Domain Reload Profiling: 17233ms
-	BeginReloadAssembly (15100ms)
+- Finished resetting the current domain, in  0.203 seconds
+Domain Reload Profiling: 525ms
+	BeginReloadAssembly (137ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (752ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (325ms)
-	LoadAllAssembliesAndSetupDomain (841ms)
-		LoadAssemblies (15098ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (107ms)
+		LoadAssemblies (135ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (840ms)
-			TypeCache.Refresh (839ms)
-				TypeCache.ScanAssembly (559ms)
+		AnalyzeDomain (106ms)
+			TypeCache.Refresh (105ms)
+				TypeCache.ScanAssembly (95ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (205ms)
+	FinalizeReload (203ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (157ms)
+		SetupLoadedEditorAssemblies (160ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
+			InitializePlatformSupportModulesInManaged (8ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1ms)
+			BeforeProcessingInitializeOnLoad (2ms)
 			ProcessInitializeOnLoadAttributes (111ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 17233ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 13.565 seconds
-Refreshing native plugins compatible for Editor in 7.61 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.450 seconds
+Refreshing native plugins compatible for Editor in 1.86 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,47 +126,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.383 seconds
-Domain Reload Profiling: 14944ms
-	BeginReloadAssembly (500ms)
+- Finished resetting the current domain, in  0.421 seconds
+Domain Reload Profiling: 870ms
+	BeginReloadAssembly (105ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (85ms)
-	RebuildCommonClasses (79ms)
-	RebuildNativeTypeToScriptingClass (51ms)
-	initialDomainReloadingComplete (132ms)
-	LoadAllAssembliesAndSetupDomain (12797ms)
-		LoadAssemblies (11668ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (283ms)
+		LoadAssemblies (219ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1428ms)
-			TypeCache.Refresh (1377ms)
-				TypeCache.ScanAssembly (1314ms)
-			ScanForSourceGeneratedMonoScriptInfo (40ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1383ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (111ms)
+				TypeCache.ScanAssembly (100ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (421ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (938ms)
+		SetupLoadedEditorAssemblies (307ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (13ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (155ms)
-			ProcessInitializeOnLoadAttributes (702ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (239ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 11.67 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3093 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (57.4 KB). Loaded Objects now: 3554.
-Memory consumption went from 121.4 MB to 121.3 MB.
-Total: 4.716700 ms (FindLiveObjects: 0.314200 ms CreateObjectMapping: 0.123100 ms MarkObjects: 4.166100 ms  DeleteObjects: 0.112400 ms)
+Unloading 3210 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.8 MB). Loaded Objects now: 3687.
+Memory consumption went from 149.5 MB to 148.6 MB.
+Total: 2.332300 ms (FindLiveObjects: 0.167300 ms CreateObjectMapping: 0.070700 ms MarkObjects: 1.830000 ms  DeleteObjects: 0.263000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -184,175 +184,105 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 133236.654315 seconds.
-  path: Assets/GameAssets/Sprites/BloodEffect.psd
-  artifactKey: Guid(5ba8d8792c104fc4998c5266bc1aa63b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/BloodEffect.psd using Guid(5ba8d8792c104fc4998c5266bc1aa63b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c50263b03f4b81d69e75a3f916183f4') in 0.148055 seconds
+  Time since last request: 216514.843281 seconds.
+  path: Assets/GameAssets/Player
+  artifactKey: Guid(346f07c02a124e34a8dd3a8a0986d950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player using Guid(346f07c02a124e34a8dd3a8a0986d950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feba5830a256633249feb9e59dbb7e0e') in 0.002353 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/GameAssets/Sprites/Health.png
-  artifactKey: Guid(2666ab0b9abc298409c04d2ddcfb856c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Health.png using Guid(2666ab0b9abc298409c04d2ddcfb856c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '021f51f4b0157c0d4baaf00778be2f4f') in 0.031908 seconds
+  Time since last request: 116.555426 seconds.
+  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
+  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c37baaa26e0030bc6f94312ec953b7') in 0.198574 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 140
 ========================================================================
 Received Import Request.
-  Time since last request: 8.772509 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair002.png
-  artifactKey: Guid(a90290b93d701364087e9d48bf0ea37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair002.png using Guid(a90290b93d701364087e9d48bf0ea37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923703f8e039c7504fd6add8387fdd7b') in 0.058612 seconds
+  Time since last request: 21.097513 seconds.
+  path: Assets/GameAssets/Material
+  artifactKey: Guid(f231a4cc0d145a044b6f31ad3c4a5064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Material using Guid(f231a4cc0d145a044b6f31ad3c4a5064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e240d82e9ac4771d894d82d862e2a6e8') in 0.000580 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair016.png
-  artifactKey: Guid(d2c079c4eab4ac14a8b914f64248532a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair016.png using Guid(d2c079c4eab4ac14a8b914f64248532a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd62bfa30e253db3b8a29386179ffb198') in 0.019342 seconds
+  Time since last request: 10.917226 seconds.
+  path: Assets/GameAssets/Texture
+  artifactKey: Guid(f1562e95a7623cd4daddf4318ff0af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Texture using Guid(f1562e95a7623cd4daddf4318ff0af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69e72c9b1b4ca885b21f9c44d6e96c2') in 0.000562 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair030.png
-  artifactKey: Guid(a048b7e299b632a408bbdcd2f2258618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair030.png using Guid(a048b7e299b632a408bbdcd2f2258618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57f6fd12fd05947536f794188b2f415') in 0.020290 seconds
+  Time since last request: 21.356310 seconds.
+  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
+  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83074ac658e8bbd8bd25ab52542f4ce') in 0.070928 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 142
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair039.png
-  artifactKey: Guid(7192baf60c3792c4e975ac55a83e365f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair039.png using Guid(7192baf60c3792c4e975ac55a83e365f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccaed780f85f45127d692e35f59edc70') in 0.026856 seconds
+  Time since last request: 7.909628 seconds.
+  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
+  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9968721cecbe11ecfba5f13df6d73f') in 0.064979 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 142
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair012.png
-  artifactKey: Guid(ffd2c6d24e331e54e8448617adfa3889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair012.png using Guid(ffd2c6d24e331e54e8448617adfa3889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac1e6a12fc29f7248e2fb2a5159cf12') in 0.019259 seconds
+  Time since last request: 9.874806 seconds.
+  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
+  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed132c558442c784281a5de62a295e10') in 0.043218 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 142
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair035.png
-  artifactKey: Guid(b3cdb667c7616d640a004df65ebd035c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair035.png using Guid(b3cdb667c7616d640a004df65ebd035c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3ef6e4ae369863609c9fb6904b7d3c') in 0.015583 seconds
+  Time since last request: 25.305253 seconds.
+  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
+  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9485173d6b15c611cc4f3d379489c34') in 0.057413 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 144
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair015.png
-  artifactKey: Guid(8f865fb1caa2cf34bbb3fab1f4681b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair015.png using Guid(8f865fb1caa2cf34bbb3fab1f4681b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61fbd42ec440f8ba96cb340d96ec1808') in 0.014659 seconds
+  Time since last request: 71.902833 seconds.
+  path: Assets/Flooded_Grounds/Scenes/Scene_A_Terrain.asset
+  artifactKey: Guid(3067f4c4673ebb049b67c5cadc9ef499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flooded_Grounds/Scenes/Scene_A_Terrain.asset using Guid(3067f4c4673ebb049b67c5cadc9ef499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e47a1a434ecbbe92b424e49b2affcc9') in 0.183661 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 175
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair040.png
-  artifactKey: Guid(d18fcd8700bf836419dafd760e748e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair040.png using Guid(d18fcd8700bf836419dafd760e748e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0d367236e4b8e2f910b6f4e024c534') in 0.018686 seconds
+  Time since last request: 2082.877073 seconds.
+  path: Assets/GameAssets/Player/Ch02_nonPBR.fbx
+  artifactKey: Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player/Ch02_nonPBR.fbx using Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1d7d1c528c2b19a094ff6f9c68a45b') in 0.131376 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 161
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair013.png
-  artifactKey: Guid(1d35507e91ebec842b0e40fd8bd11aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair013.png using Guid(1d35507e91ebec842b0e40fd8bd11aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e134df9d3f638beff7e115e40de7cb8') in 0.017656 seconds
+  Time since last request: 22.797231 seconds.
+  path: Assets/GameAssets/Player/Ch02_nonPBR.fbx
+  artifactKey: Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player/Ch02_nonPBR.fbx using Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df0afd5956f504c6f902411eb6bb3c8') in 0.142543 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 167
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair020.png
-  artifactKey: Guid(228f2257486d0764ab996be6040a8de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair020.png using Guid(228f2257486d0764ab996be6040a8de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89906ea34dc87a8d6e58e7b47a47a45b') in 0.019526 seconds
+  Time since last request: 11.227305 seconds.
+  path: Assets/GameAssets/Player/Ch02_nonPBR.fbx
+  artifactKey: Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player/Ch02_nonPBR.fbx using Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b849eb35d7d201020147f589311e7d') in 0.078970 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 167
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair043.png
-  artifactKey: Guid(2ae18eedb5f5ba842b8b318d727f7c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair043.png using Guid(2ae18eedb5f5ba842b8b318d727f7c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8233b78766e7b867854bca52345196f5') in 0.013304 seconds
+  Time since last request: 4.293551 seconds.
+  path: Assets/GameAssets/Player/Ch02_nonPBR.fbx
+  artifactKey: Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Player/Ch02_nonPBR.fbx using Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b675bb0cac8970cc2dc8f755b89f382') in 0.094940 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair018.png
-  artifactKey: Guid(4da3e140ddf2e7e4baf56f87ca4e0c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair018.png using Guid(4da3e140ddf2e7e4baf56f87ca4e0c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a95b1d020675f59dc120b5d77bdc20') in 0.020130 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair010.png
-  artifactKey: Guid(3b9f9dad707e111428c5da20b6b2fde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair010.png using Guid(3b9f9dad707e111428c5da20b6b2fde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b39856f624d63fccc552fd5e266f5a') in 0.016468 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.918392 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair051.png
-  artifactKey: Guid(f92b52ca30f243a4591c2f4bf9383aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair051.png using Guid(f92b52ca30f243a4591c2f4bf9383aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '058e96741e09289a570d5fe4dc0ce640') in 0.023539 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000549 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair059.png
-  artifactKey: Guid(e396b88e7c8329942a3346e6432bbcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair059.png using Guid(e396b88e7c8329942a3346e6432bbcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15a62300f857736eabc1e825c35ad1ad') in 0.045170 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair054.png
-  artifactKey: Guid(9372d9c6670c8ec41a60051a82990ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair054.png using Guid(9372d9c6670c8ec41a60051a82990ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4807f87a81519c7316bbb7e9e85d4ebf') in 0.037972 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000364 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair071.png
-  artifactKey: Guid(ecd2b1b8c99d8174587de444ef3d99a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair071.png using Guid(ecd2b1b8c99d8174587de444ef3d99a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad7380c483d913b96202c23086178da') in 0.032220 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair070.png
-  artifactKey: Guid(03c9f83850b96324e819b61f59240753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair070.png using Guid(03c9f83850b96324e819b61f59240753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb4c100a677a63b1f3c6dba5b519c08') in 0.024857 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/GameAssets/Sprites/Crosshairs/crosshair064.png
-  artifactKey: Guid(378b57dca968c0d46a1d23800af289e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Sprites/Crosshairs/crosshair064.png using Guid(378b57dca968c0d46a1d23800af289e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8b2ff2241cf46aaccba7b4844ef2d2') in 0.023896 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Number of asset objects unloaded after import = 167
