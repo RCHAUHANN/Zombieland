@@ -15,7 +15,7 @@ C:/Users/rashi/Documents/GitHub/Zombieland/zombieland
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60758
+62657
 Successfully changed project path to: C:/Users/rashi/Documents/GitHub/Zombieland/zombieland
 C:/Users/rashi/Documents/GitHub/Zombieland/zombieland
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/rashi/Documents/GitHub/Zombieland/zombieland
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21732] Host "[IP] 192.168.10.51 [Port] 0 [Flags] 2 [Guid] 1988205877 [EditorId] 1988205877 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [26192] Host "[IP] 192.168.10.51 [Port] 0 [Flags] 2 [Guid] 3773903642 [EditorId] 3773903642 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [21732] Host "[IP] 192.168.10.51 [Port] 0 [Flags] 2 [Guid] 1988205877 [EditorId] 1988205877 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26192] Host "[IP] 192.168.10.51 [Port] 0 [Flags] 2 [Guid] 3773903642 [EditorId] 3773903642 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 4.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 13.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -70,45 +70,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004673 seconds.
-- Loaded All Assemblies, in  0.323 seconds
+Registered in 0.007981 seconds.
+- Loaded All Assemblies, in  0.276 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.203 seconds
-Domain Reload Profiling: 525ms
-	BeginReloadAssembly (137ms)
+Domain Reload Profiling: 478ms
+	BeginReloadAssembly (98ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (107ms)
-		LoadAssemblies (135ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (101ms)
+		LoadAssemblies (97ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (106ms)
-			TypeCache.Refresh (105ms)
-				TypeCache.ScanAssembly (95ms)
+		AnalyzeDomain (99ms)
+			TypeCache.Refresh (98ms)
+				TypeCache.ScanAssembly (89ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (203ms)
+	FinalizeReload (204ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (160ms)
+		SetupLoadedEditorAssemblies (162ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
+			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (111ms)
+			ProcessInitializeOnLoadAttributes (114ms)
 			ProcessInitializeOnLoadMethodAttributes (35ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 525ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.450 seconds
-Refreshing native plugins compatible for Editor in 1.86 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.486 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,9 +126,9 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.421 seconds
-Domain Reload Profiling: 870ms
-	BeginReloadAssembly (105ms)
+- Finished resetting the current domain, in  0.427 seconds
+Domain Reload Profiling: 912ms
+	BeginReloadAssembly (111ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
@@ -136,37 +136,37 @@ Domain Reload Profiling: 870ms
 		CreateAndSetChildDomain (15ms)
 	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (283ms)
-		LoadAssemblies (219ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (314ms)
+		LoadAssemblies (258ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (127ms)
-			TypeCache.Refresh (111ms)
-				TypeCache.ScanAssembly (100ms)
+		AnalyzeDomain (124ms)
+			TypeCache.Refresh (107ms)
+				TypeCache.ScanAssembly (96ms)
 			ScanForSourceGeneratedMonoScriptInfo (12ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (421ms)
+	FinalizeReload (427ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (307ms)
+		SetupLoadedEditorAssemblies (314ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
+			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (239ms)
+			BeforeProcessingInitializeOnLoad (45ms)
+			ProcessInitializeOnLoadAttributes (242ms)
 			ProcessInitializeOnLoadMethodAttributes (15ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3210 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 39 unused Assets / (0.8 MB). Loaded Objects now: 3687.
-Memory consumption went from 149.5 MB to 148.6 MB.
-Total: 2.332300 ms (FindLiveObjects: 0.167300 ms CreateObjectMapping: 0.070700 ms MarkObjects: 1.830000 ms  DeleteObjects: 0.263000 ms)
+Memory consumption went from 149.4 MB to 148.5 MB.
+Total: 2.370600 ms (FindLiveObjects: 0.171300 ms CreateObjectMapping: 0.062100 ms MarkObjects: 1.908700 ms  DeleteObjects: 0.227600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -184,105 +184,166 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 216514.843281 seconds.
-  path: Assets/GameAssets/Player
-  artifactKey: Guid(346f07c02a124e34a8dd3a8a0986d950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player using Guid(346f07c02a124e34a8dd3a8a0986d950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feba5830a256633249feb9e59dbb7e0e') in 0.002353 seconds
+  Time since last request: 226917.877899 seconds.
+  path: Assets/GameAssets/Femal animation
+  artifactKey: Guid(a5512f7b3fc3bad46a28f39dfb7f0679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation using Guid(a5512f7b3fc3bad46a28f39dfb7f0679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bed8fce4988f8e196fb993b90863a8d') in 0.002093 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 116.555426 seconds.
-  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
-  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c37baaa26e0030bc6f94312ec953b7') in 0.198574 seconds
+  Time since last request: 29.169516 seconds.
+  path: Assets/GameAssets/Femal animation/Ch02_nonPBR@Walking.fbx
+  artifactKey: Guid(d142eadc6cc02e142b1ec8c23fa4fa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Ch02_nonPBR@Walking.fbx using Guid(d142eadc6cc02e142b1ec8c23fa4fa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4d27d84d33db055c4ba4b7807bb4db') in 0.029226 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 140
+Number of asset objects unloaded after import = 135
 ========================================================================
 Received Import Request.
-  Time since last request: 21.097513 seconds.
-  path: Assets/GameAssets/Material
-  artifactKey: Guid(f231a4cc0d145a044b6f31ad3c4a5064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Material using Guid(f231a4cc0d145a044b6f31ad3c4a5064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e240d82e9ac4771d894d82d862e2a6e8') in 0.000580 seconds
+  Time since last request: 19.816797 seconds.
+  path: Assets/GameAssets/Femal animation/Ch02_nonPBR.fbx
+  artifactKey: Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Ch02_nonPBR.fbx using Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e162bfb50ecb04f5f810320c5e120541') in 0.276823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 167
+========================================================================
+Received Import Request.
+  Time since last request: 3422.483935 seconds.
+  path: Assets/GameAssets/Femal animation/Female controller.controller
+  artifactKey: Guid(1557a8a9c1f5ce94396a993d35689071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female controller.controller using Guid(1557a8a9c1f5ce94396a993d35689071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1643399ba0ab36a1b5427ef059b0fe02') in 0.002070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 117.016529 seconds.
+  path: Assets/GameAssets/Femal animation/Ch02_nonPBR@Walking.fbx
+  artifactKey: Guid(d142eadc6cc02e142b1ec8c23fa4fa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Ch02_nonPBR@Walking.fbx using Guid(d142eadc6cc02e142b1ec8c23fa4fa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8a2badbbbd53bb74be7c190bb91baf') in 0.004880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 387.791497 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter/firing rifle.fbx
+  artifactKey: Guid(3c261dbac9e8f4b459fffdeae41b11b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter/firing rifle.fbx using Guid(3c261dbac9e8f4b459fffdeae41b11b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9e1500272454aa9f34110135193e63') in 0.005443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.006767 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter/jump forward.fbx
+  artifactKey: Guid(cb1e34de7bf392d40a0682e725805a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter/jump forward.fbx using Guid(cb1e34de7bf392d40a0682e725805a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a156ef62fc73967afefebc42143d27ab') in 0.002760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.007638 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter/start walking backwards.fbx
+  artifactKey: Guid(287e82b516236224caa354678ad807f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter/start walking backwards.fbx using Guid(287e82b516236224caa354678ad807f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16a194e49615aa4f5ac9dc2f433fdb34') in 0.004342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter/start walking.fbx
+  artifactKey: Guid(44a44de9443ec3345974ba825fdc9f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter/start walking.fbx using Guid(44a44de9443ec3345974ba825fdc9f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c0dcbf6434afc4036d2dea62a9d595') in 0.005131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter/strafe (2).fbx
+  artifactKey: Guid(f9f99b8af55ab244c89a6619441854f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter/strafe (2).fbx using Guid(f9f99b8af55ab244c89a6619441854f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f056c541405cf0376b3d2f0af8eedbc') in 0.004194 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter/walk backwards stop.fbx
+  artifactKey: Guid(7dcee1006edf6d44a9736dacd818248f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter/walk backwards stop.fbx using Guid(7dcee1006edf6d44a9736dacd818248f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645982029b615b9aa5839448c459abdd') in 0.003618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter/rifle run.fbx
+  artifactKey: Guid(5a12b00a466e2e4459692750f0e8376e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter/rifle run.fbx using Guid(5a12b00a466e2e4459692750f0e8376e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886b1b1a0c9c50afaf646a6444d64931') in 0.003049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter/rifle aiming idle.fbx
+  artifactKey: Guid(d91083dbd447532468271e600c66c050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter/rifle aiming idle.fbx using Guid(d91083dbd447532468271e600c66c050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352f796d0d6cf3a8ab3f23ed704fa757') in 0.002396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter
+  artifactKey: Guid(7a5f8c406de55904da5970157ebd20af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter using Guid(7a5f8c406de55904da5970157ebd20af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90271ecedd6b6b4ea556c1b18da2732') in 0.000303 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 10.917226 seconds.
-  path: Assets/GameAssets/Texture
-  artifactKey: Guid(f1562e95a7623cd4daddf4318ff0af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Texture using Guid(f1562e95a7623cd4daddf4318ff0af6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69e72c9b1b4ca885b21f9c44d6e96c2') in 0.000562 seconds
+  Time since last request: 0.000120 seconds.
+  path: Assets/GameAssets/Femal animation/Female shooter/walking to dying.fbx
+  artifactKey: Guid(bfd7132800aa64a43b9aa3863ff77238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Female shooter/walking to dying.fbx using Guid(bfd7132800aa64a43b9aa3863ff77238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff74c502a708f90bf4e57c5da6ffd503') in 0.002808 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 135
 ========================================================================
 Received Import Request.
-  Time since last request: 21.356310 seconds.
-  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
-  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83074ac658e8bbd8bd25ab52542f4ce') in 0.070928 seconds
+  Time since last request: 22.172769 seconds.
+  path: Assets/GameAssets/Femal animation/Femal locomotion/jump.fbx
+  artifactKey: Guid(48cce763d8ca7894fa158cf736732758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Femal locomotion/jump.fbx using Guid(48cce763d8ca7894fa158cf736732758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '544a93a7dfb2a3b909a8d2962429db44') in 0.006949 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 142
+Number of asset objects unloaded after import = 135
 ========================================================================
 Received Import Request.
-  Time since last request: 7.909628 seconds.
-  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
-  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9968721cecbe11ecfba5f13df6d73f') in 0.064979 seconds
+  Time since last request: 0.000010 seconds.
+  path: Assets/GameAssets/Femal animation/Femal locomotion/right strafe walk.fbx
+  artifactKey: Guid(3c5eaf50963c93e44baf3d6305a0da93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Femal locomotion/right strafe walk.fbx using Guid(3c5eaf50963c93e44baf3d6305a0da93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec7de2deee039e7a7d446cea631d80d') in 0.003978 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 142
+Number of asset objects unloaded after import = 135
 ========================================================================
 Received Import Request.
-  Time since last request: 9.874806 seconds.
-  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
-  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed132c558442c784281a5de62a295e10') in 0.043218 seconds
+  Time since last request: 0.000318 seconds.
+  path: Assets/GameAssets/Femal animation/Femal locomotion/left turn (2).fbx
+  artifactKey: Guid(13933b5152ffc4d4a96948b1fa47f33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Femal locomotion/left turn (2).fbx using Guid(13933b5152ffc4d4a96948b1fa47f33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4253a804e65234db534d6dd2e40513f4') in 0.003940 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 142
+Number of asset objects unloaded after import = 135
 ========================================================================
 Received Import Request.
-  Time since last request: 25.305253 seconds.
-  path: Assets/GameAssets/Player/Ch29_nonPBR.fbx
-  artifactKey: Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player/Ch29_nonPBR.fbx using Guid(1b1729d3c7f06b44291dfc340bf400d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9485173d6b15c611cc4f3d379489c34') in 0.057413 seconds
+  Time since last request: 0.000036 seconds.
+  path: Assets/GameAssets/Femal animation/Femal locomotion/running.fbx
+  artifactKey: Guid(ff9706424a0adea4eaddcbdbe4bfa90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Femal locomotion/running.fbx using Guid(ff9706424a0adea4eaddcbdbe4bfa90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16479d0cf9f2b90aa3a795f6cb79d72a') in 0.003182 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 144
+Number of asset objects unloaded after import = 135
 ========================================================================
 Received Import Request.
-  Time since last request: 71.902833 seconds.
-  path: Assets/Flooded_Grounds/Scenes/Scene_A_Terrain.asset
-  artifactKey: Guid(3067f4c4673ebb049b67c5cadc9ef499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flooded_Grounds/Scenes/Scene_A_Terrain.asset using Guid(3067f4c4673ebb049b67c5cadc9ef499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e47a1a434ecbbe92b424e49b2affcc9') in 0.183661 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/GameAssets/Femal animation/Femal locomotion/left turn.fbx
+  artifactKey: Guid(0fd41312872033c4ea89dc72cae68bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameAssets/Femal animation/Femal locomotion/left turn.fbx using Guid(0fd41312872033c4ea89dc72cae68bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b465532114cf5c82b9958f5b639eca') in 0.002650 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 175
-========================================================================
-Received Import Request.
-  Time since last request: 2082.877073 seconds.
-  path: Assets/GameAssets/Player/Ch02_nonPBR.fbx
-  artifactKey: Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player/Ch02_nonPBR.fbx using Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1d7d1c528c2b19a094ff6f9c68a45b') in 0.131376 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
-========================================================================
-Received Import Request.
-  Time since last request: 22.797231 seconds.
-  path: Assets/GameAssets/Player/Ch02_nonPBR.fbx
-  artifactKey: Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player/Ch02_nonPBR.fbx using Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df0afd5956f504c6f902411eb6bb3c8') in 0.142543 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 11.227305 seconds.
-  path: Assets/GameAssets/Player/Ch02_nonPBR.fbx
-  artifactKey: Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player/Ch02_nonPBR.fbx using Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b849eb35d7d201020147f589311e7d') in 0.078970 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 4.293551 seconds.
-  path: Assets/GameAssets/Player/Ch02_nonPBR.fbx
-  artifactKey: Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GameAssets/Player/Ch02_nonPBR.fbx using Guid(9843acb6c9924514b87f904643a79b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b675bb0cac8970cc2dc8f755b89f382') in 0.094940 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
+Number of asset objects unloaded after import = 135
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
