@@ -6,6 +6,8 @@ public class PlayerScript : MonoBehaviour
 {
     [Header("Player Movement")]
     public float playerSpeed = 1.9f;
+    public float playerSprint = 3f;
+
 
     [Header("Player Script Camera")]
     public Transform playerCamera;
@@ -28,7 +30,7 @@ public class PlayerScript : MonoBehaviour
 
     private void Update()
     {
-        Onsurface =Physics.CheckSphere(surfaceCheck.position, surfaceDistance,surfaceMask);
+        Onsurface = Physics.CheckSphere(surfaceCheck.position, surfaceDistance,surfaceMask);
         if (Onsurface && velocity.y < 0)
         {
             velocity.y = -2f;
@@ -36,6 +38,9 @@ public class PlayerScript : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity *Time.deltaTime);
         playerMove();
+
+        Jump();
+        Sprint();
     }
 
     void playerMove()
@@ -51,6 +56,37 @@ public class PlayerScript : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f,targetAngle,0f);
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle,0f)* Vector3.forward;
             characterController.Move (direction.normalized * playerSpeed * Time.deltaTime);
+
+        }
+    }
+
+
+    void Jump()
+    {
+        if (Input.GetButton("Jump")&& Onsurface)
+        {
+            velocity.y = Mathf.Sqrt(jumpRange * -2 * gravity);
+        }
+    }
+
+    void Sprint()
+    {
+        if(Input.GetButton("Sprint")&& Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) && Onsurface)
+        {
+            float horizontal_axis = Input.GetAxis("Horizontal");
+            float vertical_axis = Input.GetAxis("Vertical");
+
+            Vector3 direction = new Vector3(horizontal_axis, 0f, vertical_axis).normalized;
+            if (direction.magnitude >= 0.1f)
+            {
+
+                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + playerCamera.eulerAngles.y;
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnCalmVelocity, turncalmTime);
+                transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+                Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                characterController.Move(direction.normalized * playerSprint * Time.deltaTime);
+
+            }
 
         }
     }
