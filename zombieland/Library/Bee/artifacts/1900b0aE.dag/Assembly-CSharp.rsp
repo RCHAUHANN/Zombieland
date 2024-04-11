@@ -404,6 +404,7 @@
 "Assets/Flooded_Grounds/Scripts/FPSDisplay.cs"
 "Assets/Flooded_Grounds/Scripts/WaterFloat.cs"
 "Assets/GameAssets/Scripts/PlayerScript.cs"
+"Assets/GameAssets/Scripts/Rifle.cs"
 -langversion:9.0
 
 /deterministic

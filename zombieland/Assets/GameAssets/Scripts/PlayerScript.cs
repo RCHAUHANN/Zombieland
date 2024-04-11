@@ -15,6 +15,7 @@ public class PlayerScript : MonoBehaviour
     [Header("Player Animator and Gravity")]
     public CharacterController characterController;
     public float gravity = -9.81f;
+    public Animator animator;
 
     [Header("Player Jumping and velocity")]
     public float turncalmTime = 0.1f;
@@ -51,12 +52,24 @@ public class PlayerScript : MonoBehaviour
         Vector3 direction =new Vector3 (horizontal_axis,0f, vertical_axis).normalized;
         if(direction.magnitude >=0.1f) {
 
+            animator.SetBool("idle", false);
+            animator.SetBool("walk", true);
+            animator.SetBool("running", false);
+            animator.SetBool("riflewalk", false);
+            animator.SetBool("idleAim", false);
+
             float targetAngle = Mathf.Atan2(direction.x,direction.z)* Mathf.Rad2Deg + playerCamera.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnCalmVelocity, turncalmTime);
             transform.rotation = Quaternion.Euler(0f,targetAngle,0f);
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle,0f)* Vector3.forward;
             characterController.Move (direction.normalized * playerSpeed * Time.deltaTime);
 
+        }
+        else
+        {
+            animator.SetBool("idle",true);
+            animator.SetBool("walk",false);
+            animator.SetBool("running", false);
         }
     }
 
@@ -65,7 +78,14 @@ public class PlayerScript : MonoBehaviour
     {
         if (Input.GetButton("Jump")&& Onsurface)
         {
+            animator.SetBool("idle", false );
+            animator.SetTrigger("jump");
             velocity.y = Mathf.Sqrt(jumpRange * -2 * gravity);
+        }
+        else
+        {
+            animator.SetBool("idle", true);
+            animator.ResetTrigger("jump");
         }
     }
 
@@ -79,6 +99,8 @@ public class PlayerScript : MonoBehaviour
             Vector3 direction = new Vector3(horizontal_axis, 0f, vertical_axis).normalized;
             if (direction.magnitude >= 0.1f)
             {
+                animator.SetBool("walk", false);
+                animator.SetBool("running", true);
 
                 float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + playerCamera.eulerAngles.y;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnCalmVelocity, turncalmTime);
@@ -86,6 +108,11 @@ public class PlayerScript : MonoBehaviour
                 Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 characterController.Move(direction.normalized * playerSprint * Time.deltaTime);
 
+            }
+            else
+            {
+                animator.SetBool("walk", true);
+                animator.SetBool("running", false);
             }
 
         }
