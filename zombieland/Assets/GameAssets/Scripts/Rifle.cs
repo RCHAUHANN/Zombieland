@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rifle : MonoBehaviour
 {
-    [Header("Riflr things")]
+    [Header("Rifle things")]
     public Camera cam;
     public float giveDamageOf = 10f;
     public float shootingRange = 100f;
@@ -21,6 +21,9 @@ public class Rifle : MonoBehaviour
  
     void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1"))
+        {
+            shoot();
+        } 
     }
 }
