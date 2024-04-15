@@ -27,6 +27,11 @@ public class PlayerScript : MonoBehaviour
     public float surfaceDistance;
     public LayerMask surfaceMask;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
 
 
     private void Update()
@@ -49,6 +54,8 @@ public class PlayerScript : MonoBehaviour
         float horizontal_axis = Input.GetAxis("Horizontal");
         float vertical_axis = Input.GetAxis("Vertical");
 
+        float mouseX = Input.GetAxis("Mouse X");
+
         Vector3 direction =new Vector3 (horizontal_axis,0f, vertical_axis).normalized;
         if(direction.magnitude >=0.1f) {
 
@@ -58,11 +65,12 @@ public class PlayerScript : MonoBehaviour
             animator.SetBool("riflewalk", false);
             animator.SetBool("idleAim", false);
 
+            transform.Rotate(Vector3.up * mouseX * playerSpeed * Time.deltaTime);
             float targetAngle = Mathf.Atan2(direction.x,direction.z)* Mathf.Rad2Deg + playerCamera.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnCalmVelocity, turncalmTime);
             transform.rotation = Quaternion.Euler(0f,targetAngle,0f);
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle,0f)* Vector3.forward;
-            characterController.Move (direction.normalized * playerSpeed * Time.deltaTime);
+            characterController.Move (transform.forward * playerSpeed * Time.deltaTime);
 
         }
         else

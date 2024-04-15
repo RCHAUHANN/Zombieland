@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectToHit : MonoBehaviour
 {
-    public float ObjectHealth = 30f;
+    public float ObjectHealth = 100f;
 
 
     public void objectHitDamage(float amount)

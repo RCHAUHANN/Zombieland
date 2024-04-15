@@ -404,6 +404,8 @@
 "Assets/Flooded_Grounds/PostProcessing/Editor/Utils/EditorResources.cs"
 "Assets/Flooded_Grounds/PostProcessing/Editor/Utils/FxStyles.cs"
 "Assets/Flooded_Grounds/PostProcessing/Editor/Utils/ReflectionUtils.cs"
+"Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs"
+"Assets/JMO Assets/WarFX/Editor/CFX_SpawnSystemEditor.cs"
 -langversion:9.0
 
 /deterministic
