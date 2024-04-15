@@ -406,6 +406,7 @@
 "Assets/GameAssets/Scripts/ObjectToHit.cs"
 "Assets/GameAssets/Scripts/PickupRifle.cs"
 "Assets/GameAssets/Scripts/PlayerScript.cs"
+"Assets/GameAssets/Scripts/Punch.cs"
 "Assets/GameAssets/Scripts/Rifle.cs"
 "Assets/GameAssets/Scripts/Switch Cam.cs"
 "Assets/JMO Assets/WarFX/Demo/Assets/CFX_AutoStopLoopedEffect.cs"
