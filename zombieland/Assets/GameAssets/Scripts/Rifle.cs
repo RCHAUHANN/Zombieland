@@ -24,13 +24,14 @@ public class Rifle : MonoBehaviour
     [Header("Rifle effects")]
     public ParticleSystem muzzlespark;
     public GameObject woodenEffect;
-
+    public GameObject goreEffect;
 
 
     private void Awake()
     {
         transform.SetParent(hand);
         Presentammunition =maxAmmunition;
+        
     }
 
     void Update()
@@ -95,7 +96,7 @@ public class Rifle : MonoBehaviour
         {
             Debug.Log(hit.transform.name);
             ObjectToHit objectToHit = hit.transform.GetComponent<ObjectToHit>();
-
+            Zombie1 zombie1 = hit.transform.GetComponent<Zombie1>();
             
 
             if (objectToHit != null)
@@ -103,6 +104,12 @@ public class Rifle : MonoBehaviour
                 objectToHit.objectHitDamage(giveDamageOf);
                 GameObject impactGo = Instantiate(woodenEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(impactGo, 1f);
+            }
+            else if (zombie1 != null)
+            {
+                zombie1.zombieHitDamage(giveDamageOf);
+                GameObject goreEffectGo = Instantiate(goreEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                Destroy(goreEffectGo, 1f);
             }
         }
     }

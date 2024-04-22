@@ -9,8 +9,7 @@ public class Punch : MonoBehaviour
     public float giveDamageof = 10f;
     public float punchingRange = 5f;
 
-    [Header("Punch effects")]
-    public GameObject woodeneffect;
+    
 
     public void punch()
     {
@@ -19,14 +18,17 @@ public class Punch : MonoBehaviour
         {
             Debug.Log(hit.transform.name);
             ObjectToHit objectToHit = hit.transform.GetComponent<ObjectToHit>();
-
+            Zombie1 zombie1 = hit.transform.GetComponent<Zombie1>();
 
 
             if (objectToHit != null)
             {
                 objectToHit.objectHitDamage(giveDamageof);
-                GameObject impactGo = Instantiate(woodeneffect, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(impactGo, 1f);
+                
+            }
+            else if (zombie1 != null)
+            {
+                zombie1.zombieHitDamage(giveDamageof);
             }
         }
     }
