@@ -8,9 +8,10 @@ public class PlayerScript : MonoBehaviour
     public float playerSpeed = 1.9f;
     public float playerSprint = 3f;
 
-    [Header("plyer health var")]
+    [Header("player health var")]
     private float playerHealth = 120f;
     public float presentHealth;
+    public GameObject playerDamage;
 
     [Header("Player Script Camera")]
     public Transform playerCamera;
@@ -118,7 +119,7 @@ public class PlayerScript : MonoBehaviour
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnCalmVelocity, turncalmTime);
                 transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
                 Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-                characterController.Move(direction.normalized * playerSprint * Time.deltaTime);
+                characterController.Move(moveDirection.normalized * playerSprint * Time.deltaTime);
 
             }
             else
@@ -133,6 +134,7 @@ public class PlayerScript : MonoBehaviour
     public void playerHitDamage(float takeDamage)
     {
         presentHealth -= takeDamage;
+        StartCoroutine(PlayerDamage());
         if (presentHealth <= 0)
         {
             Playerdie();
@@ -143,5 +145,12 @@ public class PlayerScript : MonoBehaviour
     {
         Cursor.lockState =CursorLockMode.None;
         Object.Destroy(gameObject, 1.0f);
+    }
+
+    IEnumerator PlayerDamage()
+    {
+        playerDamage.SetActive(true);
+        yield return new WaitForSeconds(1.8f);
+        playerDamage.SetActive(false);
     }
 }

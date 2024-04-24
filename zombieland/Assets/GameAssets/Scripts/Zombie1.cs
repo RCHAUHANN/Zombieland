@@ -109,7 +109,7 @@ public class Zombie1 : MonoBehaviour
         if (!previouslyAttack)
         {
             RaycastHit hitinfo;
-            if (Physics.Raycast(transform.position, (playerbody.position - transform.position).normalized, out hitinfo, attackingRadius))
+            if (Physics.Raycast(AttackRaycastArea.transform.position, AttackRaycastArea.transform.forward, out hitinfo, attackingRadius,playerLayer))
 
             {
                 Debug.Log("attacking...." + hitinfo.transform.name);

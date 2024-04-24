@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 
 public class Rifle : MonoBehaviour
@@ -97,6 +98,7 @@ public class Rifle : MonoBehaviour
             Debug.Log(hit.transform.name);
             ObjectToHit objectToHit = hit.transform.GetComponent<ObjectToHit>();
             Zombie1 zombie1 = hit.transform.GetComponent<Zombie1>();
+            Zombie2 zombie2 = hit.transform.GetComponent<Zombie2>();
             
 
             if (objectToHit != null)
@@ -110,6 +112,13 @@ public class Rifle : MonoBehaviour
                 zombie1.zombieHitDamage(giveDamageOf);
                 GameObject goreEffectGo = Instantiate(goreEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(goreEffectGo, 1f);
+            }
+            else if(zombie2 != null)
+            {
+                zombie2.zombieHitDamage(giveDamageOf);
+                GameObject goreEffectGo = Instantiate(goreEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                Destroy(goreEffectGo, 1f);
+
             }
         }
     }
