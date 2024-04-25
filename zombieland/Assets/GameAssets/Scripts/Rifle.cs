@@ -14,10 +14,11 @@ public class Rifle : MonoBehaviour
     public PlayerScript player;
     public Transform hand;
     public Animator animator;
+    public GameObject RifleUI;
 
     [Header("Rifle ammunition and shooting")]
     private int maxAmmunition = 32;
-    public int mag = 10;
+    public int mag = 15;
     private int Presentammunition;
     public float reloadingTime = 1.3f;
     private bool setReloading = false;
@@ -32,7 +33,8 @@ public class Rifle : MonoBehaviour
     {
         transform.SetParent(hand);
         Presentammunition =maxAmmunition;
-        
+        RifleUI.SetActive(true);
+
     }
 
     void Update()
@@ -89,7 +91,8 @@ public class Rifle : MonoBehaviour
         {
             mag--;
         }
-        
+        AmmoCount.occurance.UpateAmmoText(Presentammunition);
+        AmmoCount.occurance.UpdateMagText(mag);
 
         muzzlespark.Play();
         RaycastHit hit;

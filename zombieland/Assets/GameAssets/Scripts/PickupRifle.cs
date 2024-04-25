@@ -8,6 +8,7 @@ public class PickupRifle : MonoBehaviour
     public GameObject PlayerRifle;
     public GameObject pickuprifle;
     public Punch playerPunch;
+    public GameObject RifleUI;
 
 
     [Header("Rifle Assign Things")]
@@ -20,6 +21,7 @@ public class PickupRifle : MonoBehaviour
     private void Awake()
     {
         PlayerRifle.SetActive(false);
+        RifleUI.SetActive(false);
     }
 
     private void Update()
