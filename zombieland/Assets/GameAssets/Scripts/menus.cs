@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class menus : MonoBehaviour
 {
@@ -77,12 +78,12 @@ public class menus : MonoBehaviour
 
     public void Restart()
     {
-        //restart
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void LoadMenu()
     {
-        //load menu
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
