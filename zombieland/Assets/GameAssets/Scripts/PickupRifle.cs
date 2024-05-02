@@ -45,6 +45,8 @@ public class PickupRifle : MonoBehaviour
             {
                 PlayerRifle.SetActive(true);
                 pickuprifle.SetActive(false);
+
+                Objectivescomplete.occurance.GeTObjectivesDone(true,false,false,false);
             }
         }
     }

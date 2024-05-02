@@ -20,11 +20,11 @@ public class SelectCharacter : MonoBehaviour
 
     public void OnCharacter2()
     {
-        SceneManager.LoadScene("Zombieland1");
+        SceneManager.LoadScene("Zombieland 2");
     }
 
     public void OnCharacter3()
     {
-        SceneManager.LoadScene("Zombieland3");
+        SceneManager.LoadScene("Zombieland 1");
     }
 }

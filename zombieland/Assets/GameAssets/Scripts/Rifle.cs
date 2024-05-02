@@ -22,6 +22,7 @@ public class Rifle : MonoBehaviour
     private int Presentammunition;
     public float reloadingTime = 1.3f;
     private bool setReloading = false;
+    public GameObject AmmoOut;
 
     [Header("Rifle effects")]
     public ParticleSystem muzzlespark;
@@ -84,6 +85,8 @@ public class Rifle : MonoBehaviour
     {
         if(mag == 0)
         {
+            StartCoroutine(AmmoOutTime());
+
             return;
         }
         Presentammunition--;
@@ -143,6 +146,13 @@ public class Rifle : MonoBehaviour
 
     }
 
- 
-   
+    IEnumerator AmmoOutTime()
+    {
+        AmmoOut.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        AmmoOut.SetActive(false);
+    }
+
+
+
 }
